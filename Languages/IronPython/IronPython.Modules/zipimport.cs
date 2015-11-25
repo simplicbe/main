@@ -140,6 +140,7 @@ to Zip archives.";
                     }
                 } else {
                     State = ImporterModuleState.Ignore;
+                    return;
                 }
 
                 _prefix = input.Replace(path, string.Empty);
