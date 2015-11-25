@@ -916,7 +916,7 @@ namespace IronPython.Runtime {
             foreach (object hook in (IEnumerable)pathHooks) {
                 try {
                     object handler = PythonCalls.Call(context, hook, dirname);
-                    Debugger.Launch();
+
                     if (handler != null)
                     {
                         if (handler is IImporterModule)
