@@ -921,7 +921,7 @@ namespace IronPython.Runtime {
                     {
                         if (handler is IImporterModule)
                         {
-                            if ((handler as IImporterModule).State == ImporterModuleState.Ready)
+                            if (((IImporterModule)handler).State == ImporterModuleState.Ready)
                             {
                                 return handler;
                             }
